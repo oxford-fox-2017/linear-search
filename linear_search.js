@@ -25,11 +25,13 @@ console.log(linearSearch(9, random_numbers));
 // Release 1
 console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
-  let result = [];
+    let result = [];
 
+    var indexResult = 0;
     for(var i=0; i<values.length; i++){
         if(values[i] == target){
-            result.push(i);
+            result[indexResult] = i;
+            indexResult++;
         }
     }
 
