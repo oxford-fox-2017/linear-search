@@ -25,7 +25,7 @@ let globalLinearSearch = (target, values) => {
   let ans = [];
   for (let i = 0; i < values.length; i++) {
     const element = values[i];
-    if (element===target) ans.push(i);
+    if (element===target) ans[ans.length] = i;
   }
   return ans;
 }
