@@ -27,7 +27,7 @@ function globalLinierSearch(hurufDicari,kata){
 	let posisiAngkaDicari = [];
 	for(let i = 0;i<kata.length;i++){
 		if(kata[i] === hurufDicari){
-			posisiAngkaDicari[posisiAngkaDicari.length]=i;
+			posisiAngkaDicari.push(i);
 		}
 	}
 	return posisiAngkaDicari;
